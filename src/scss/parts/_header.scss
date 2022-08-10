@@ -127,5 +127,9 @@
       // top: 50%;
       // right: 10px;
       transform: rotate(-45deg);
+      &--white {
+         border-left: 0.5px solid #fff;
+         border-bottom: 0.5px solid #fff;
+      }
    }
 }

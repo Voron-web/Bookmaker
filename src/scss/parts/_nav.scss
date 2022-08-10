@@ -1,0 +1,30 @@
+.nav {
+   height: 30px;
+   background-color: var(--color-dark_grey);
+   color: #fff;
+   font-size: 12px;
+   font-weight: 400;
+   &__container {
+      height: 100%;
+   }
+   &__arrow {
+      margin-left: 6px;
+      transform: translate(0, -1px) rotate(-45deg);
+   }
+}
+.main-menu {
+   &__list {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__item {
+      display: flex;
+      align-items: center;
+      &:not(:first-child) {
+         margin-left: 30px;
+      }
+   }
+}

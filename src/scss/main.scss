@@ -2,6 +2,8 @@
 @import "res";
 @import "var";
 @import "parts/header";
+@import "parts/nav";
+
 * {
    // border: 1px solid red;
 }
@@ -16,5 +18,14 @@ body {
       text-decoration: none;
       color: inherit;
       font-family: inherit;
+   }
+}
+.arrow {
+   width: 4px;
+   height: 4px;
+   transform: rotate(-45deg);
+   &--white {
+      border-left: 0.5px solid #fff;
+      border-bottom: 0.5px solid #fff;
    }
 }
