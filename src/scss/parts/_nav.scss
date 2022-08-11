@@ -4,12 +4,14 @@
    color: #fff;
    font-size: 12px;
    font-weight: 400;
+   flex: 0 0 auto;
    &__container {
       height: 100%;
    }
    &__arrow {
       margin-left: 6px;
-      transform: translate(0, -1px) rotate(-45deg);
+      margin-bottom: 3px;
+      // transform: rotate(-45deg);
    }
 }
 .main-menu {

@@ -3,15 +3,174 @@
 })
 
 <body>
-   @include('./html/_header.html')
-   @include('./html/_nav.html')
-   <div class="container">
+   <div class="wrapper">
+      @include('./html/_header.html')
+      @include('./html/_nav.html')
       <main>
-      </main>
-   </div>
-   @include('./html/_footer.html')
+         <div class="container main__container">
+            <aside class="aside-left aside">
+               <div class="aside__live">
+                  <div class="aside__live-title">
+                     <div class="aside__live-emblem">
+                        <div class="aside__live-emblem--inner">
+                        </div>
+                     </div>
+                     <span>live</span>
+                  </div>
+                  <div class="double-arrow left">
+                     <div class="double-arrow__inner"></div>
+                  </div>
+               </div>
 
-   <script src="./js/script.js"></script>
+               <div class="aside-top">
+                  <div class="aside-top__title">
+                     <div class="aside-top__emblem">
+                        <svg>
+                           <use xlink:href="img/sprite.svg#svg--aside_top"></use>
+                        </svg>
+                        <span>Топ игры</span>
+                     </div>
+                     <div class="arrow arrow--white aside-top__arrow"></div>
+                  </div>
+                  <div class="aside-top__info">
+                     <div class="aside-top__btn-line">
+                        <div class="aside-top__btn"><span>П1</span> <span>8.8</span></div>
+                        <div class="aside-top__btn"><span>X</span> <span>5.4</span></div>
+                        <div class="aside-top__btn"><span>П2</span> <span>1.39</span></div>
+                     </div>
+                     <div class="aside-top__table">
+                        <div class="aside-top__table-title">Футбол. Чемпионат Англии Lorem, ipsum dolor.</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_yellow"></div>
+                        </div>
+                        <div class="aside-top__table-team1">Манчестер Юнайтед</div>
+                        <div class="aside-top__table-date">07.08.2022</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_blue"></div>
+                        </div>
+                        <div class="aside-top__table-team2">Брайтон энд Хоув Альбион</div>
+                        <div class="aside-top__table-time">18:00</div>
+                     </div>
+                  </div>
+                  <div class="aside-top__info">
+                     <div class="aside-top__btn-line">
+                        <div class="aside-top__btn"><span>П1</span> <span>8.8</span></div>
+                        <div class="aside-top__btn"><span>X</span> <span>5.4</span></div>
+                        <div class="aside-top__btn"><span>П2</span> <span>1.39</span></div>
+                     </div>
+                     <div class="aside-top__table">
+                        <div class="aside-top__table-title">Футбол. Чемпионат Англии Lorem, ipsum dolor.</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_yellow"></div>
+                        </div>
+                        <div class="aside-top__table-team1">Манчестер Юнайтед</div>
+                        <div class="aside-top__table-date">07.08.2022</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_blue"></div>
+                        </div>
+                        <div class="aside-top__table-team2">Брайтон энд Хоув Альбион</div>
+                        <div class="aside-top__table-time">18:00</div>
+                     </div>
+                  </div>
+                  <div class="aside-top__info">
+                     <div class="aside-top__btn-line">
+                        <div class="aside-top__btn"><span>П1</span> <span>8.8</span></div>
+                        <div class="aside-top__btn"><span>X</span> <span>5.4</span></div>
+                        <div class="aside-top__btn"><span>П2</span> <span>1.39</span></div>
+                     </div>
+                     <div class="aside-top__table">
+                        <div class="aside-top__table-title">Футбол. Чемпионат Англии Lorem, ipsum dolor.</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_yellow"></div>
+                        </div>
+                        <div class="aside-top__table-team1">Манчестер Юнайтед</div>
+                        <div class="aside-top__table-date">07.08.2022</div>
+                        <div class="aside-top__table-point">
+                           <div class="aside-top__table-point aside-top__table-point_blue"></div>
+                        </div>
+                        <div class="aside-top__table-team2">Брайтон энд Хоув Альбион</div>
+                        <div class="aside-top__table-time">18:00</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="aside-filter">
+                  <div class="aside-filter__title-block">
+                     <div class="aside-filter__title">
+                        <div class="aside-filter__emblem">
+                           <svg>
+                              <use xlink:href="img/sprite.svg#svg--aside_filter"></use>
+                           </svg>
+                        </div>
+                        <span>Фильтр</span>
+                     </div>
+                     <div class="double-arrow up">
+                        <div class="double-arrow__inner"></div>
+                     </div>
+                  </div>
+                  <ul class="aside-filter__list">
+                     <li>
+                        <span>Футбол</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Теннис</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Настольный теннис</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Крикет</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Американский футбол</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>КиберСпорт</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                  </ul>
+                  <div class="aside-filter__subtitle">Линия. Категория от А-Я</div>
+                  <ul class="aside-filter__list">
+                     <li>
+                        <span>UFC</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Австралийский футбол</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Автогонки</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Атлетика</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                     <li>
+                        <span>Бадминтон</span>
+                        <div class="arrow arrow--white"></div>
+                     </li>
+                  </ul>
+               </div>
+            </aside>
+
+            <div class="content">
+
+               <div class="content__banner"></div>
+            </div>
+            <aside class="aside-right">
+
+            </aside>
+         </div>
+      </main>
+      @include('./html/_footer.html')
+      <script src="./js/script.js"></script>
+   </div>
 </body>
 
 </html>

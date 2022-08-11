@@ -4,7 +4,7 @@
    width: 100%;
    background-color: #fff;
    color: var(--color-dark_grey);
-   padding: 15px 0;
+   // padding: 15px 0;
    & svg {
       max-height: 100%;
    }
@@ -120,16 +120,10 @@
    }
    &__arrow {
       // background-color: red;
-      width: 4px;
-      height: 4px;
+
       border-left: 0.5px solid var(--color-dark_grey);
       border-bottom: 0.5px solid var(--color-dark_grey);
       // top: 50%;
       // right: 10px;
-      transform: rotate(-45deg);
-      &--white {
-         border-left: 0.5px solid #fff;
-         border-bottom: 0.5px solid #fff;
-      }
    }
 }
