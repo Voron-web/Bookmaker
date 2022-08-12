@@ -21,6 +21,7 @@
    }
 
    &__subtitle {
+      margin-bottom: 25px;
       width: 450px;
       line-height: 15px;
       font-weight: 400;
@@ -63,16 +64,46 @@
          margin-left: 10px;
       }
    }
-}
-.account-set {
-   // &__space {
-   //    display: flex;
-   //    // align-items: center;
-   //    // justify-content: center;
-   // }
-   &__second-block {
+
+   &__button-line {
+      height: 30px;
+      margin-bottom: 25px;
+      display: flex;
+      gap: 15px;
+      & input {
+         color: #333333;
+         height: 100%;
+         width: 87px;
+         text-align: center;
+         border-radius: 3px;
+      }
+      & label {
+         margin-right: 3px;
+      }
    }
 
+   &__button-white {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #636363;
+      border-radius: 3px;
+   }
+
+   &__button {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #6565bd;
+      border-radius: 3px;
+   }
+}
+.account-set {
+   &__second-block {
+   }
    &__space-security {
       padding-right: 0;
       border: none;
@@ -139,5 +170,26 @@
       &:checked {
          background: #6565bd;
       }
+   }
+}
+
+.account-history {
+   &__main-block {
+      padding-left: 20px;
+   }
+   &__button-line {
+      margin-bottom: 13px;
+   }
+   &__links {
+      display: flex;
+      gap: 15px;
+   }
+   &__link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+   }
+   &__arrow {
+      margin-top: -2px;
    }
 }
