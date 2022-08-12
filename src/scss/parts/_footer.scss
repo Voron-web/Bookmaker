@@ -1,0 +1,38 @@
+.footer {
+   padding: 30px 0 100px 0;
+   background-color: var(--color-dark_grey);
+   color: #fff;
+   &__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+}
+
+.footer-section {
+   &__title {
+      position: relative;
+      color: var(--color-purple);
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      &::after {
+         content: "";
+         position: absolute;
+         width: 44px;
+         height: 3px;
+         background-color: var(--color-purple);
+         left: 0;
+         bottom: -10px;
+      }
+   }
+
+   &__list {
+      font-weight: 500;
+      font-size: 15px;
+      & li {
+         margin-bottom: 20px;
+      }
+   }
+}
