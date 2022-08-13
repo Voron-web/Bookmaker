@@ -1,0 +1,75 @@
+@include('./html/_head.html',{
+'title':'Главная'
+})
+
+<body>
+   <!-- @include('./html/_modal.html') -->
+
+   <div class="wrapper">
+      @include('./html/_header.html')
+      @include('./html/_nav.html')
+      <main>
+         <div class="container main__container">
+            <aside class="aside-left aside">
+               <div class="account-menu">
+                  <ul>
+                     <li class="account-menu__item active"><a href="#">Личные данные</a></li>
+                     <li class="account-menu__item "><a href="#">Настройки аккаунта</a></li>
+                     <li class="account-menu__item"><a href="#">Вывести со счёта</a></li>
+                     <li class="account-menu__item"><a href="#">История ставок</a></li>
+                     <li class="account-menu__item"><a href="#">История переводов</a></li>
+                     <li class="account-menu__item"><a href="#">Запрос администратора</a></li>
+                     <li class="account-menu__item"><a href="#">Выход</a></li>
+                  </ul>
+               </div>
+            </aside>
+
+            @include('./html/_account-personal.html')
+
+
+            <aside class="aside-right">
+               <div class="aside-coupon">
+                  <div class="aside-coupon__nav">
+                     <div class="aside-coupon__btn"><span>купон ставок</span></div>
+                     <div class="aside-coupon__btn active">открытые ставки</div>
+                     <div class="double-arrow">
+                        <div class="double-arrow__inner"></div>
+                     </div>
+                     <svg>
+                        <use xlink:href="img/sprite.svg#svg--aside_arrow"></use>
+                     </svg>
+                  </div>
+                  <div class="aside-coupon__content">
+                     <div class="aside-coupon__text">
+                        Добавьте события в купон или введите код для загрузки событий
+                     </div>
+                     <p class="aside-coupon__bonus">
+                        100% бонус за первое пополнение
+                     </p>
+                     <a href="#" class="aside-coupon__btn-singup">регистрация</a>
+                     <div class="aside-coupon__load">
+                        <span>Сохранить/Загрузить события</span>
+                        <div class="arrow arrow--white"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="aside-offer">
+                  <div class="aside-offer__title">
+                     <span>Предложения</span>
+                     <div class="double-arrow up">
+                        <div class="double-arrow__inner"></div>
+                     </div>
+                  </div>
+                  <div class="aside-offer__banner"></div>
+                  <div class="aside-offer__banner"></div>
+                  <div class="aside-offer__banner"></div>
+               </div>
+            </aside>
+         </div>
+      </main>
+      @include('./html/_footer.html')
+      <script src="./js/script.js"></script>
+   </div>
+</body>
+
+</html>

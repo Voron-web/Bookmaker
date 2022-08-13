@@ -29,11 +29,13 @@
    }
 
    &__second-block {
+      // flex: 1 1 50%;
       width: 100%;
       margin-top: 30px;
    }
 
    &__header {
+      width: 100%;
       padding: 0 30px;
       height: 30px;
       display: flex;
@@ -53,6 +55,11 @@
       padding: 0 20px;
       background-color: #fff;
       border-top: 1px solid rgba($color: #333333, $alpha: 0.2);
+      & svg {
+         width: 10px;
+         height: 10px;
+         margin-left: 10px;
+      }
    }
 
    &__space-block {
@@ -191,5 +198,45 @@
    }
    &__arrow {
       margin-top: -2px;
+   }
+}
+
+.account-personal {
+   &__main-block {
+      padding-bottom: 10px;
+   }
+   &__space {
+      border: none;
+   }
+   &__switch {
+      & input {
+         &:before {
+            top: 55%;
+         }
+      }
+   }
+   &__table {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+   }
+
+   &__col {
+      width: 100%;
+   }
+
+   &__data {
+      display: flex;
+      align-items: center;
+      & div[class="arrow arrow--black"] {
+         margin: 0 3px 0 10px;
+      }
+   }
+
+   &__button {
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
    }
 }
