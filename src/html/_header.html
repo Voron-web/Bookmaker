@@ -16,11 +16,61 @@
          </div>
       </div>
       <div class="header__button-block">
-         <div class="header__enter">
+         <div class="header__enter @active">
             <svg>
                <use xlink:href="img/sprite.svg#svg--header_enter"></use>
             </svg>
             <a href="#">войти</a>
+
+            <div class="singup @active">
+               <form action="">
+                  <div class="singup__input">
+                     <input type="text" placeholder="ID или Email">
+                     <div class="singup__img">
+                        <svg>
+                           <use xlink:href="img/sprite.svg#svg--singup_phone"></use>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="singup__input">
+                     <input type="password" placeholder="Пароль">
+
+                     <div class="singup__img">
+                        <svg>
+                           <use xlink:href="img/sprite.svg#svg--singup_pass"></use>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="singup__links">
+                     <div class="singup__checkbox">
+                        <input id="singup-checkbox" type="checkbox">
+                        <label for="singup-checkbox">Запомнить</label>
+                     </div>
+                     <a href="#">Забыли пароль?</a>
+                  </div>
+                  <button>войти</button>
+               </form>
+               <p>Вы можете авторизоваться на сайте через:</p>
+               <div class="singup__social">
+                  <a href="#">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#svg--singup_google"></use>
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#svg--singup_ok"></use>
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#svg--singup_fb"></use>
+                     </svg>
+                  </a>
+
+
+               </div>
+            </div>
          </div>
          <div class="header__singup">
             <svg>

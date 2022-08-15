@@ -7,6 +7,7 @@
 @import "parts/footer";
 @import "parts/modal";
 @import "parts/account";
+@import "parts/mobile";
 
 * {
    // border: 1px solid red;
@@ -124,6 +125,9 @@ main {
    }
    &.up {
       transform: rotate(135deg);
+   }
+   &.right {
+      transform: rotate(225deg);
    }
 }
 .aside-top {

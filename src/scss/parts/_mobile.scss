@@ -1,0 +1,370 @@
+.wrapper-mobile {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.header-mobile {
+   // height: 85px;
+   padding: 22px 0;
+   width: 100%;
+   font-size: 10px;
+   font-weight: 500;
+   background: #424242;
+
+   &__content {
+      padding: 0 30px;
+
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo {
+      width: 75px;
+      height: 36px;
+      background: #f5f5f5;
+   }
+
+   &__button-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+   }
+
+   &__singup {
+      background: #6565bd;
+   }
+
+   &__singin {
+      background: #98c539;
+   }
+}
+.container-mobile {
+   height: 100%;
+   max-width: 428px;
+   margin: 0 auto;
+}
+.btn {
+   padding: 15px 28px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   text-transform: uppercase;
+   border-radius: 3px;
+   cursor: pointer;
+}
+.burger {
+   position: relative;
+   width: 22px;
+   height: 16px;
+   cursor: pointer;
+
+   & div {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #636363;
+      border-radius: 3px;
+   }
+   & div:first-child {
+      top: 0;
+   }
+   & div:nth-child(2) {
+      top: 50%;
+      transform: translate(0, -50%);
+   }
+   & div:last-child {
+      bottom: 0;
+   }
+   &__cover {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      opacity: 0.5;
+      z-index: 2;
+      &.active {
+         display: block;
+      }
+   }
+   &__menu {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 85vw;
+      background: #333333;
+      padding: 25px 30px 0 11px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      &.active {
+         display: block;
+      }
+   }
+
+   &__list {
+      text-transform: uppercase;
+      padding: 0 0 30px 34px;
+      border-bottom: 2px solid rgba(245, 245, 245, 0.2);
+      & li {
+         display: flex;
+         justify-content: space-between;
+      }
+      & li:not(:last-child) {
+         margin-bottom: 26px;
+      }
+   }
+
+   &__underline {
+      padding-left: 34px;
+      padding-top: 12px;
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      width: 61px;
+      height: 61px;
+      border-radius: 50%;
+      background: #d9d9d9;
+      margin-right: 21px;
+   }
+
+   &__info {
+      line-height: 24px;
+   }
+
+   &__time {
+      font-weight: 700;
+      font-size: 20px;
+   }
+
+   &__date {
+      font-size: 15px;
+      font-weight: 400;
+   }
+}
+
+.mobile-menu {
+   // height: 40px;
+   padding: 14px 0;
+   background: #333333;
+   &__content {
+      height: 100%;
+      padding: 0 30px;
+      font-size: 10px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10px;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+
+      & ul {
+         display: flex;
+         gap: 15px;
+         & li {
+            display: flex;
+            align-items: center;
+         }
+         & li div {
+            margin-left: 5px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #98c539;
+         }
+      }
+      & svg {
+         width: 19px;
+         height: 19px;
+      }
+   }
+}
+
+.main-mobile {
+   height: 100%;
+   width: 100%;
+   flex: 1 1 auto;
+   // flex-shrink: 1;
+   // flex-grow: 1;
+   background: #424242;
+
+   &__header-content {
+      height: 30px;
+   }
+
+   &__header {
+      padding: 0 30px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: uppercase;
+      color: #fff;
+      background: #6565bd;
+      font-size: 10px;
+      font-weight: 500;
+   }
+
+   &__title {
+      display: flex;
+   }
+}
+// &__content {
+//    // height: 183px;
+// }
+
+.mobile-cards {
+   position: relative;
+   height: 183px;
+   width: 100%;
+   background: #f5f5f5;
+   color: #333333;
+   overflow: hidden;
+
+   &__line {
+      position: absolute;
+      top: 6px;
+      left: 36px;
+      display: flex;
+      gap: 15px;
+   }
+
+   &__card {
+      padding: 15px 15px 10px 15px;
+      background: #fff;
+      // width: calc(100% - 72px);
+      width: 356px;
+      height: 167px;
+      border-radius: 3px;
+   }
+}
+.card {
+   &__title {
+      margin-bottom: 15px;
+      display: flex;
+      padding-right: 72px;
+   }
+
+   &__title-logo {
+      flex: 0 0 26px;
+      width: 26px;
+      height: 26px;
+      background: #d9d9d9;
+      border-radius: 50%;
+   }
+
+   &__title-text {
+      margin-left: 14px;
+      font-weight: 700;
+      font-size: 12px;
+   }
+
+   &__info {
+      position: relative;
+      margin-bottom: 11px;
+   }
+
+   &__info-teams {
+      font-size: 12px;
+      margin-bottom: 15px;
+   }
+
+   &__info-location {
+      font-size: 10px;
+      font-weight: 500;
+      color: #636363;
+   }
+
+   &__info-score {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 15px;
+      font-weight: 700;
+   }
+
+   &__table {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__col {
+      // border-radius: 3px;
+   }
+   &__row-title,
+   &__row-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+   }
+
+   &__row-title {
+      padding: 4px 21px 3px;
+      background: #f5f5f5;
+      color: #333333;
+      border-radius: 3px 3px 0 0;
+   }
+
+   &__row-info {
+      padding: 4px 15px 3px;
+      background: #333333;
+      color: #fff;
+      border-radius: 0 0 3px 3px;
+   }
+}
+
+.footer-mobile {
+   padding-top: 61px;
+   // height: 403px;
+   padding-bottom: 228px;
+   background: #1a1a3c;
+   color: #fff;
+   font-weight: 400;
+   font-size: 12px;
+
+   &__menu {
+      margin-bottom: 49px;
+      padding: 0 30px;
+      & a {
+         text-decoration: underline;
+      }
+      & ul {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   &__btn {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 30px;
+      background: #f5f5f5;
+      color: #333333;
+      text-transform: uppercase;
+      font-size: 15px;
+
+      & svg {
+         width: 8px;
+         height: 14px;
+         margin-right: 10px;
+      }
+   }
+}
